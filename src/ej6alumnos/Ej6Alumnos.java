@@ -59,7 +59,7 @@ public class Ej6Alumnos {
             System.out.println("Introduce las notas de los alumnos");
             nota = teclado.nextFloat();
             
- 
+ /* MARIO ¿Porqué no metes este if-else en el for de arriba y usas notaAlumno en lugar de notas? */
         if (nota < aprobado) {
             numSuspensos++;
              }
@@ -81,7 +81,8 @@ public class Ej6Alumnos {
              mayorNota=valor;
              menorNota=valor;
 
-        
+     /* MARIO esto que viene debajo, no le veo el sentido...primero pides la nota, y luego si es menor o mayor, pides el nombre del alumno....
+     ¿no ves mas claro pedir nombre y nota del tiron? */
         
         for (int i = 2; i <= numNotas; i++) {
             System.out.println("Introduce la nota " + nota1 + " de la clase: ");
@@ -109,4 +110,12 @@ public class Ej6Alumnos {
         System.out.println("Hay "+numAprobados+" aprobados y " +numSuspensos+ " suspensos");
     }
 }
+    /* MARIO: en resumen, tienes que unificar el código pensando que cuando te digan el nombre del alumno, y su nota, ya puedes saber si es el que tiene la nota más alta, 
+    si es el que tiene la nota más baja, si vas a sumar 1 a aprobados o a suspensos y que esa nota la vas a acumular en la suma total de las notas de todos los alumnos.
+    Usar tres bucles cuando puedes usar uno, porque al final, lo que haces es repetir el proceso de pedir nombre+nota, no es una solución al programa....
+    Piensalo con lo que hemos visto hoy de leer ficheros....si te llegan info en un fichero y tu tienes que tratarla, en tu caso leerias el fichero 3 veces, cuando 
+    con leerlo una vez sería más que suficiente....*/
     
+    
+    
+    */
